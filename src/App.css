@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Roboto:wght@100;300;400;700&display=swap");
+
+.nav {
+  height: 70px;
+  box-shadow: 0px 1px 8px #888888;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+.nav-hidden {
+  transform: translateY(-70px);
+}
+
+.nav-icon {
+  flex: 0.48;
+}
+.nav-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  height: 100px;
+  justify-content: center;
+}
+.nav-text img {
+  position: relative;
+  top: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* Search Bar */
+
+.news-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  height: 100%;
+  margin-top: 85px;
+  margin-bottom: 15px;
+}
+
+.news-search .relative input {
+  height: 40px;
+  width: 60%;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.news-search .relative button {
+  text-decoration: none;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: #a3a3a3;
+}
+
+.news-search .relative button i {
+  height: 50%;
+}
+
+.news-search .relative input:focus {
+  outline-color: rgb(217, 217, 224);
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0e8e8;
+  background: #333333;
+  font-weight: 400;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .footer-text {
+  padding: 5px 0;
+}
+
+.footer .footer-icons {
+  padding: 5px 0;
+}
+
+.footer .footer-icons a {
+  padding: 0 30px;
+  color: #dbdfc8c2;
+}
+
+.footer .footer-icons i:hover {
+  color: rgb(151, 139, 139);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.4);
+}
+
+.newsCard {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 25px;
+  border: 0.1px solid #c9c9c9;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.newsCard:hover {
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.001);
+}
+
+.newsCard .newsCard-img {
+  object-fit: cover;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  width: 320px;
+  height: 270px;
+}
+
+.newsCard .newsCard-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.newsCard .newsCard-text .newsCard-title a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 7px;
+}
+
+.newsCard .newsCard-text .newsCard-title a span {
+  font-family: "Roboto", sans-serif;
+}
+
+.newsCard .newsCard-text .newsCard-title a span:hover {
+  text-decoration: underline;
+}
+
+.newsCard .newsCard-text .newsCard-title .newsCard-author {
+  font-size: small;
+  color: #44444d;
+}
+
+.newsCard .newsCard-text .newsCard-desc {
+  padding-top: 15px;
+  text-align: justify;
+}
+
+.newsCard .newsCard-text .newsCard-desc .readmore {
+  font-size: small;
+}
+
+.newsCard .newsCard-text .newsCard-desc .readmore a {
+  text-decoration: none;
+  color: #0d10d8;
+}
+
+.newsCard .newsCard-text .newsCard-desc .readmore a b:hover {
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .newsCard {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsCard .newsCard-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-loadmore {
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: none;
+  padding: 7px 25px;
+  margin-top: -15px;
+  margin-bottom: 128px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  top: 10;
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+}
+
+.btn-loadmore:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
